@@ -18,7 +18,7 @@ class School
     @roster[grade]
   end
   
-  def sort 
+  def sort(roster)
    if @roster[grade] == grade
      @roster[grade] = student_name.sort
    end
