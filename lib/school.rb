@@ -19,9 +19,10 @@ class School
   end
   
   def sort(roster)
-   if @roster[grade] == grade
-     @roster[grade] = student_name.sort
-   end
-   @roster
+   @roster.each do |grade, name|
+      @roster[grade] = name.sort
+    end
+    @roster
+  end
 end
 
